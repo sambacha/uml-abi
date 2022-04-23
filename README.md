@@ -1,8 +1,43 @@
 # UML ABI
 
+```puml
+@startuml
+ 
+ !$TEST=%loadJSON("abi.json", $DEF)
+
+title ABI Encoding UML
+
+ rectangle Inner #tan as "
+    {{json
+    $TEST
+    }}
+    ABI Generated at %date()
+    "
+
+@enduml
+```
+
+## Usage
+
+[Download plantuml latest jar](https://sourceforge.net/projects/plantuml/files/latest/download)
 
 
-  <pre>
+then Run
+
+```shell
+./build.sh
+```
+
+
+## Example
+
+![](abi-uml-example.png)
+
+
+## Ref
+
+
+```puml
       @ startuml
       ' loads a local file
       !$JSON_LOCAL_RELATIVE=%loadJSON("file.json")
@@ -25,17 +60,4 @@
       !$JSON_REMOTE_DEF=%loadJSON("https://localhost:7778/management/health", $STATUS_NO_CONNECTION)
       status -> $JSON_REMOTE_DEF.status
       @ enduml
-  </pre>
-
-## Usage
-
-Run
-
-```shell
-./build.sh
 ```
-
-
-## Example
-
-![](abi-uml-example.png)
