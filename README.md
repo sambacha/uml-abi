@@ -26,3 +26,16 @@
       status -> $JSON_REMOTE_DEF.status
       @ enduml
   </pre>
+
+## Usage
+
+Run
+
+```shell
+./build.sh
+```
+
+
+## Example
+
+![](abi-uml-example.png)
