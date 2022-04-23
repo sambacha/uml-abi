@@ -8,7 +8,7 @@ title Load JSON example with status
     {{json
     $TEST
     }}
-    Health of management service at %date()
+    ABI Generated at %date()
     "
 
 @enduml
