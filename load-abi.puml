@@ -1,0 +1,14 @@
+@startuml
+ 
+ !$TEST=%loadJSON("abi.json", $DEF)
+
+title Load JSON example with status
+
+ rectangle Inner #tan as "
+    {{json
+    $TEST
+    }}
+    Health of management service at %date()
+    "
+
+@enduml
