@@ -1,6 +1,6 @@
 @startuml
  
- !$TEST=%loadJSON("abi.json", $DEF)
+ !$TEST=%loadJSON("forge.json", $DEF)
 
 title Load JSON example with status
 
